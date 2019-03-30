@@ -22,13 +22,6 @@ class Sessiontheatre
     private $idSes;
 
     /**
-     * @var integer
-     *
-     * @ORM\Column(name="id_salle", type="integer", nullable=false)
-     */
-    private $idSalle;
-
-    /**
      * @var \DateTime
      *
      * @ORM\Column(name="date_debut", type="datetime", nullable=false)
@@ -58,6 +51,16 @@ class Sessiontheatre
      * })
      */
     private $idsceneFk;
+
+    /**
+     * @var \Salles
+     *
+     * @ORM\ManyToOne(targetEntity="Salles")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_salle", referencedColumnName="id")
+     * })
+     */
+    private $idSalle;
 
 
 }

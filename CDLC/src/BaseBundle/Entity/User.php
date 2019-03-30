@@ -2,7 +2,6 @@
 
 namespace BaseBundle\Entity;
 
-use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -11,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="user")
  * @ORM\Entity
  */
-class User extends BaseUser
+class User
 {
     /**
      * @var integer
@@ -20,48 +19,57 @@ class User extends BaseUser
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    protected $id;
+    private $id;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=30, nullable=false)
+     * @ORM\Column(name="nom", type="string", length=30, nullable=true)
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="prenom", type="string", length=30, nullable=false)
+     * @ORM\Column(name="prenom", type="string", length=30, nullable=true)
      */
     private $prenom;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="pwd", type="string", length=100, nullable=true)
+     */
+    private $pwd;
+
+    /**
      * @var \DateTime
      *
-     * @ORM\Column(name="ddn", type="date", nullable=false)
+     * @ORM\Column(name="ddn", type="date", nullable=true)
      */
     private $ddn;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="sexe", type="string", length=10, nullable=false)
+     * @ORM\Column(name="sexe", type="string", length=10, nullable=true)
      */
     private $sexe;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="tel", type="string", length=20, nullable=false)
+     * @ORM\Column(name="tel", type="string", length=20, nullable=true)
      */
     private $tel;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="ci", type="integer", nullable=false)
+     * @ORM\Column(name="ci", type="integer", nullable=true)
      */
     private $ci;
+
+
 }
 

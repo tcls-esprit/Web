@@ -36,13 +36,6 @@ class Commentaire
     private $date = 'CURRENT_TIMESTAMP';
 
     /**
-     * @var integer
-     *
-     * @ORM\Column(name="id_user", type="integer", nullable=false)
-     */
-    private $idUser;
-
-    /**
      * @var string
      *
      * @ORM\Column(name="owner", type="string", length=30, nullable=false)
@@ -65,6 +58,16 @@ class Commentaire
      * })
      */
     private $idEvent;
+
+    /**
+     * @var \User
+     *
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_user", referencedColumnName="id")
+     * })
+     */
+    private $idUser;
 
 
 }

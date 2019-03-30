@@ -52,13 +52,6 @@ class Event
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_user", type="integer", nullable=false)
-     */
-    private $idUser;
-
-    /**
-     * @var integer
-     *
      * @ORM\Column(name="etat", type="integer", nullable=false)
      */
     private $etat;
@@ -76,6 +69,16 @@ class Event
      * @ORM\Column(name="type_event", type="string", length=20, nullable=false)
      */
     private $typeEvent;
+
+    /**
+     * @var \User
+     *
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_user", referencedColumnName="id")
+     * })
+     */
+    private $idUser;
 
 
 }
