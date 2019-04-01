@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: tcls
+    database_user: root
+    database_password: null
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: Khaledtsu@gmail.com
+    mailer_password: 'Omha12-*'
+    secret: 15608a7b00967922a0550ad8b0cda3ac5786e736
