@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="cart", indexes={@ORM\Index(name="id_p", columns={"id_p"}), @ORM\Index(name="id_u", columns={"id_u"})})
  * @ORM\Entity
+ * @ORM\Entity(repositoryClass="BaseBundle\Repository\CartRepository")
  */
 class Cart
 {
@@ -69,6 +70,117 @@ class Cart
      */
     private $idP;
 
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @return int
+     */
+    public function getQuantity()
+    {
+        return $this->quantity;
+    }
+
+    /**
+     * @param int $quantity
+     */
+    public function setQuantity($quantity)
+    {
+        $this->quantity = $quantity;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param float $price
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
+    }
+
+    /**
+     * @return float
+     */
+    public function getTotal()
+    {
+        return $this->total;
+    }
+
+    /**
+     * @param float $total
+     */
+    public function setTotal($total)
+    {
+        $this->total = $total;
+    }
+
+    /**
+     * @return \User
+     */
+    public function getIdU()
+    {
+        return $this->idU;
+    }
+
+    /**
+     * @param \User $idU
+     */
+    public function setIdU($idU)
+    {
+        $this->idU = $idU;
+    }
+
+    /**
+     * @return \Product
+     */
+    public function getIdP()
+    {
+        return $this->idP;
+    }
+
+    /**
+     * @param \Product $idP
+     */
+    public function setIdP($idP)
+    {
+        $this->idP = $idP;
+    }
+
 
 }
-

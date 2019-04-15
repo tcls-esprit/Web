@@ -11,7 +11,7 @@ include_once $this->targetDirs[3].'\\vendor\\doctrine\\dbal\\lib\\Doctrine\\DBAL
 include_once $this->targetDirs[3].'\\vendor\\doctrine\\common\\lib\\Doctrine\\Common\\EventManager.php';
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Bridge\\Doctrine\\ContainerAwareEventManager.php';
 include_once $this->targetDirs[3].'\\vendor\\doctrine\\common\\lib\\Doctrine\\Common\\EventSubscriber.php';
-include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\FOSUserBundle\\Doctrine\\UserListener.php';
+include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\user-bundle\\Doctrine\\UserListener.php';
 include_once $this->targetDirs[3].'\\vendor\\doctrine\\orm\\lib\\Doctrine\\ORM\\Tools\\AttachEntityListenersListener.php';
 include_once $this->targetDirs[3].'\\vendor\\doctrine\\doctrine-bundle\\ConnectionFactory.php';
 

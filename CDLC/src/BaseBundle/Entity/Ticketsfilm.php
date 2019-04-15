@@ -41,54 +41,6 @@ class Ticketsfilm
      */
     private $idUser;
 
-    /**
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param int $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return \Sessionfilm
-     */
-    public function getIdSesion()
-    {
-        return $this->idSesion;
-    }
-
-    /**
-     * @param \Sessionfilm $idSesion
-     */
-    public function setIdSesion($idSesion)
-    {
-        $this->idSesion = $idSesion;
-    }
-
-    /**
-     * @return \User
-     */
-    public function getIdUser()
-    {
-        return $this->idUser;
-    }
-
-    /**
-     * @param \User $idUser
-     */
-    public function setIdUser($idUser)
-    {
-        $this->idUser = $idUser;
-    }
-
 
 }
 

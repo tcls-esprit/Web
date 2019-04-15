@@ -1,18 +1,7 @@
-base_ticketstheatre:
-    resource: "@BaseBundle/Controller/TicketstheatreController.php"
+store:
+    resource: "@StoreBundle/Controller/"
     type:     annotation
-
-base_ticketsevent:
-    resource: "@BaseBundle/Controller/TicketseventController.php"
-    type:     annotation
-
-base_ticketsfilm:
-    resource: "@BaseBundle/Controller/TicketsfilmController.php"
-    type:     annotation
-
-base_salles:
-    resource: "@BaseBundle/Controller/SallesController.php"
-    type:     annotation
+    prefix:   /
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
@@ -20,12 +9,6 @@ base:
     resource: "@BaseBundle/Controller/"
     type:     annotation
     prefix:   /
-
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
-fos_js_routing:
-    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
-adesigns_calendar:
-    resource: "@ADesignsCalendarBundle/Resources/config/routing.xml"
-

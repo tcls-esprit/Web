@@ -7,7 +7,10 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
-    'JsonpCallbackValidator' => array($vendorDir . '/willdurand/jsonp-callback-validator/src'),
+    'ProxyManager\\' => array($vendorDir . '/ocramius/proxy-manager/src'),
+    'Payum\\Offline' => array($vendorDir . '/payum/offline'),
+    'Payum\\Core\\' => array($vendorDir . '/payum/core'),
+    'Nomaya\\SocialBundle\\' => array($vendorDir . '/nomaya/social-bundle'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),
-    'ADesigns\\CalendarBundle' => array($vendorDir . '/adesigns/calendar-bundle'),
+    'Behat\\Transliterator' => array($vendorDir . '/behat/transliterator/src'),
 );

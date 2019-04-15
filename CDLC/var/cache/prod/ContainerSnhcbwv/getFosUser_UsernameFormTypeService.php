@@ -7,8 +7,8 @@ use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Form\\FormTypeInterface.php';
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Form\\AbstractType.php';
-include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\FOSUserBundle\\Form\\Type\\UsernameFormType.php';
+include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\user-bundle\\Form\\Type\\UsernameFormType.php';
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Form\\DataTransformerInterface.php';
-include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\FOSUserBundle\\Form\\DataTransformer\\UserToUsernameTransformer.php';
+include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\user-bundle\\Form\\DataTransformer\\UserToUsernameTransformer.php';
 
 return $this->services['fos_user.username_form_type'] = new \FOS\UserBundle\Form\Type\UsernameFormType(new \FOS\UserBundle\Form\DataTransformer\UserToUsernameTransformer(${($_ = isset($this->services['fos_user.user_manager']) ? $this->services['fos_user.user_manager'] : $this->load('getFosUser_UserManagerService.php')) && false ?: '_'}));

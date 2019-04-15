@@ -103,8 +103,7 @@ iframe {
   background: #ca2026;
   color: #fff; }
 
-/*==========Components=========*/
-span.type {
+/*==========Components=========*/span.type {
   white-space: nowrap;
   overflow: hidden;
   width: 30em; }

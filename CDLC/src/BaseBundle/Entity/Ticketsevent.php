@@ -24,9 +24,9 @@ class Ticketsevent
     /**
      * @var \Event
      *
-     * @ORM\ManyToOne(targetEntity="Sessionevent")
+     * @ORM\ManyToOne(targetEntity="Event")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_session", referencedColumnName="id_session")
+     *   @ORM\JoinColumn(name="id_session", referencedColumnName="id")
      * })
      */
     private $idSession;
@@ -40,54 +40,6 @@ class Ticketsevent
      * })
      */
     private $idUser;
-
-    /**
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param int $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return \Sessionevent
-     */
-    public function getIdSession()
-    {
-        return $this->idSession;
-    }
-
-    /**
-     * @param \Sessionevent $idSession
-     */
-    public function setIdSession($idSession)
-    {
-        $this->idSession = $idSession;
-    }
-
-    /**
-     * @return \User
-     */
-    public function getIdUser()
-    {
-        return $this->idUser;
-    }
-
-    /**
-     * @param \User $idUser
-     */
-    public function setIdUser($idUser)
-    {
-        $this->idUser = $idUser;
-    }
 
 
 }

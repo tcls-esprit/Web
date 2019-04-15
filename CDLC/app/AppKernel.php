@@ -19,8 +19,9 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new BaseBundle\BaseBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
-            new ADesigns\CalendarBundle\ADesignsCalendarBundle(),
+            new StoreBundle\StoreBundle(),
+            new Vich\UploaderBundle\VichUploaderBundle(),
+            new Flosch\Bundle\StripeBundle\FloschStripeBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
