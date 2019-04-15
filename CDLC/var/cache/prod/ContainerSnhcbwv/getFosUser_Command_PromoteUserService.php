@@ -6,8 +6,8 @@ use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 // Returns the private 'fos_user.command.promote_user' shared service.
 
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Console\\Command\\Command.php';
-include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\user-bundle\\Command\\RoleCommand.php';
-include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\user-bundle\\Command\\PromoteUserCommand.php';
+include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\FOSUserBundle\\Command\\RoleCommand.php';
+include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\FOSUserBundle\\Command\\PromoteUserCommand.php';
 
 $this->services['fos_user.command.promote_user'] = $instance = new \FOS\UserBundle\Command\PromoteUserCommand(${($_ = isset($this->services['fos_user.util.user_manipulator']) ? $this->services['fos_user.util.user_manipulator'] : $this->load('getFosUser_Util_UserManipulatorService.php')) && false ?: '_'});
 

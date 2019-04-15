@@ -36,12 +36,7 @@ class User extends BaseUser
      */
     private $prenom;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="pwd", type="string", length=100, nullable=true)
-     */
-    private $pwd;
+
 
     /**
      * @var \DateTime

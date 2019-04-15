@@ -7,6 +7,6 @@ use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Form\\FormTypeInterface.php';
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Form\\AbstractType.php';
-include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\user-bundle\\Form\\Type\\ResettingFormType.php';
+include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\FOSUserBundle\\Form\\Type\\ResettingFormType.php';
 
 return $this->services['fos_user.resetting.form.type'] = new \FOS\UserBundle\Form\Type\ResettingFormType('AppBundle\\Entity\\User');

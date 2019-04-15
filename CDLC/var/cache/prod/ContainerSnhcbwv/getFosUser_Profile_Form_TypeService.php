@@ -7,6 +7,6 @@ use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Form\\FormTypeInterface.php';
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Form\\AbstractType.php';
-include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\user-bundle\\Form\\Type\\ProfileFormType.php';
+include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\FOSUserBundle\\Form\\Type\\ProfileFormType.php';
 
 return $this->services['fos_user.profile.form.type'] = new \FOS\UserBundle\Form\Type\ProfileFormType('AppBundle\\Entity\\User');

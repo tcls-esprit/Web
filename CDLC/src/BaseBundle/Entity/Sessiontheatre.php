@@ -62,6 +62,102 @@ class Sessiontheatre
      */
     private $idSalle;
 
+    /**
+     * @return int
+     */
+    public function getIdSes()
+    {
+        return $this->idSes;
+    }
+
+    /**
+     * @param int $idSes
+     */
+    public function setIdSes($idSes)
+    {
+        $this->idSes = $idSes;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateDebut()
+    {
+        return $this->dateDebut;
+    }
+
+    /**
+     * @param \DateTime $dateDebut
+     */
+    public function setDateDebut($dateDebut)
+    {
+        $this->dateDebut = $dateDebut;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateFin()
+    {
+        return $this->dateFin;
+    }
+
+    /**
+     * @param \DateTime $dateFin
+     */
+    public function setDateFin($dateFin)
+    {
+        $this->dateFin = $dateFin;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+    /**
+     * @param float $prix
+     */
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+    }
+
+    /**
+     * @return \Theatre
+     */
+    public function getIdsceneFk()
+    {
+        return $this->idsceneFk;
+    }
+
+    /**
+     * @param \Theatre $idsceneFk
+     */
+    public function setIdsceneFk($idsceneFk)
+    {
+        $this->idsceneFk = $idsceneFk;
+    }
+
+    /**
+     * @return \Salles
+     */
+    public function getIdSalle()
+    {
+        return $this->idSalle;
+    }
+
+    /**
+     * @param \Salles $idSalle
+     */
+    public function setIdSalle($idSalle)
+    {
+        $this->idSalle = $idSalle;
+    }
+
 
 }
 

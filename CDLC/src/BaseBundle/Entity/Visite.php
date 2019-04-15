@@ -59,6 +59,102 @@ class Visite
      */
     private $idGuide;
 
+    /**
+     * @return int
+     */
+    public function getIdVisite()
+    {
+        return $this->idVisite;
+    }
+
+    /**
+     * @param int $idVisite
+     */
+    public function setIdVisite($idVisite)
+    {
+        $this->idVisite = $idVisite;
+    }
+
+    /**
+     * @return int
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param int $date
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
+    }
+
+    /**
+     * @return int
+     */
+    public function getHDebut()
+    {
+        return $this->hDebut;
+    }
+
+    /**
+     * @param int $hDebut
+     */
+    public function setHDebut($hDebut)
+    {
+        $this->hDebut = $hDebut;
+    }
+
+    /**
+     * @return int
+     */
+    public function getHFin()
+    {
+        return $this->hFin;
+    }
+
+    /**
+     * @param int $hFin
+     */
+    public function setHFin($hFin)
+    {
+        $this->hFin = $hFin;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+    /**
+     * @param int $prix
+     */
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+    }
+
+    /**
+     * @return \Guide
+     */
+    public function getIdGuide()
+    {
+        return $this->idGuide;
+    }
+
+    /**
+     * @param \Guide $idGuide
+     */
+    public function setIdGuide($idGuide)
+    {
+        $this->idGuide = $idGuide;
+    }
+
 
 }
 

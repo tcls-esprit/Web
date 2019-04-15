@@ -55,6 +55,86 @@ class Sessionevent
      */
     private $idSalle;
 
+    /**
+     * @return int
+     */
+    public function getIdSession()
+    {
+        return $this->idSession;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateDeb()
+    {
+        return $this->dateDeb;
+    }
+
+    /**
+     * @param int $idSession
+     */
+    public function setIdSession($idSession)
+    {
+        $this->idSession = $idSession;
+    }
+
+    /**
+     * @param \DateTime $dateDeb
+     */
+    public function setDateDeb($dateDeb)
+    {
+        $this->dateDeb = $dateDeb;
+    }
+
+    /**
+     * @param \DateTime $dateFin
+     */
+    public function setDateFin($dateFin)
+    {
+        $this->dateFin = $dateFin;
+    }
+
+    /**
+     * @param \Event $idEvent
+     */
+    public function setIdEvent($idEvent)
+    {
+        $this->idEvent = $idEvent;
+    }
+
+    /**
+     * @param \Salles $idSalle
+     */
+    public function setIdSalle($idSalle)
+    {
+        $this->idSalle = $idSalle;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateFin()
+    {
+        return $this->dateFin;
+    }
+
+    /**
+     * @return \Event
+     */
+    public function getIdEvent()
+    {
+        return $this->idEvent;
+    }
+
+    /**
+     * @return \Salles
+     */
+    public function getIdSalle()
+    {
+        return $this->idSalle;
+    }
+
 
 }
 

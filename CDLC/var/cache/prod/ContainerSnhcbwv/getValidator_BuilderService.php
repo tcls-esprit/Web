@@ -18,7 +18,7 @@ include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Com
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Cache\\Traits\\PhpArrayTrait.php';
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Cache\\Adapter\\PhpArrayAdapter.php';
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Validator\\ObjectInitializerInterface.php';
-include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\user-bundle\\Validator\\Initializer.php';
+include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\FOSUserBundle\\Validator\\Initializer.php';
 
 $this->services['validator.builder'] = $instance = \Symfony\Component\Validator\Validation::createValidatorBuilder();
 
@@ -39,11 +39,11 @@ $instance->setConstraintValidatorFactory(new \Symfony\Component\Validator\Contai
 }])));
 $instance->setTranslator(${($_ = isset($this->services['translator.default']) ? $this->services['translator.default'] : $this->getTranslator_DefaultService()) && false ?: '_'});
 $instance->setTranslationDomain('validators');
-$instance->addXmlMappings([0 => ($this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Form/Resources/config/validation.xml'), 1 => ($this->targetDirs[3].'\\vendor\\friendsofsymfony\\user-bundle/Resources/config/validation.xml')]);
+$instance->addXmlMappings([0 => ($this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Form/Resources/config/validation.xml'), 1 => ($this->targetDirs[3].'\\vendor\\friendsofsymfony\\FOSUserBundle/Resources/config/validation.xml')]);
 $instance->enableAnnotationMapping(${($_ = isset($this->services['annotation_reader']) ? $this->services['annotation_reader'] : $this->getAnnotationReaderService()) && false ?: '_'});
 $instance->addMethodMapping('loadValidatorMetadata');
 $instance->setMetadataCache(new \Symfony\Component\Validator\Mapping\Cache\Psr6Cache(\Symfony\Component\Cache\Adapter\PhpArrayAdapter::create(($this->targetDirs[0].'/validation.php'), ${($_ = isset($this->services['cache.validator']) ? $this->services['cache.validator'] : $this->load('getCache_ValidatorService.php')) && false ?: '_'})));
 $instance->addObjectInitializers([0 => ${($_ = isset($this->services['doctrine.orm.validator_initializer']) ? $this->services['doctrine.orm.validator_initializer'] : $this->load('getDoctrine_Orm_ValidatorInitializerService.php')) && false ?: '_'}, 1 => new \FOS\UserBundle\Validator\Initializer(${($_ = isset($this->services['fos_user.util.canonical_fields_updater']) ? $this->services['fos_user.util.canonical_fields_updater'] : $this->load('getFosUser_Util_CanonicalFieldsUpdaterService.php')) && false ?: '_'})]);
-$instance->addXmlMapping(($this->targetDirs[3].'\\vendor\\friendsofsymfony\\user-bundle\\DependencyInjection\\Compiler/../../Resources/config/storage-validation/orm.xml'));
+$instance->addXmlMapping(($this->targetDirs[3].'\\vendor\\friendsofsymfony\\FOSUserBundle\\DependencyInjection\\Compiler/../../Resources/config/storage-validation/orm.xml'));
 
 return $instance;

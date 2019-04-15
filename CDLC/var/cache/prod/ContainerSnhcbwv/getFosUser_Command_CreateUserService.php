@@ -6,7 +6,7 @@ use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 // Returns the private 'fos_user.command.create_user' shared service.
 
 include_once $this->targetDirs[3].'\\vendor\\symfony\\symfony\\src\\Symfony\\Component\\Console\\Command\\Command.php';
-include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\user-bundle\\Command\\CreateUserCommand.php';
+include_once $this->targetDirs[3].'\\vendor\\friendsofsymfony\\FOSUserBundle\\Command\\CreateUserCommand.php';
 
 $this->services['fos_user.command.create_user'] = $instance = new \FOS\UserBundle\Command\CreateUserCommand(${($_ = isset($this->services['fos_user.util.user_manipulator']) ? $this->services['fos_user.util.user_manipulator'] : $this->load('getFosUser_Util_UserManipulatorService.php')) && false ?: '_'});
 
